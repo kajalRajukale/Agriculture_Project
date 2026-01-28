@@ -3,7 +3,7 @@
 This module provides deterministic suggestions (no external APIs).
 It is intentionally small and explainable so farmers can trust the outputs.
 """
-from datetime import datetime, timedelta
+from datetime import datetime
 
 
 def suggest_for_soil(soil_ph=None, moisture=None, soil_type=None, crop=None):

@@ -3,9 +3,15 @@ from . import views
 
 urlpatterns = [
     # Health and info endpoints
-    path('health/', views.health, name='health'),
     path('', views.index, name='index'),
     path('stats/', views.stats, name='stats'),
+
+    # API documentation endpoints
+    path('openapi.json', views.openapi_schema, name='openapi_schema'),
+    path('docs/', views.docs, name='docs'),
+    
+    # Health check endpoint
+    path('api/health/', views.health, name='health'),
     
     # Admin views
     path('admin/', views.admin_dashboard, name='admin_dashboard'),

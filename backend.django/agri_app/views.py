@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import JsonResponse
+from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 from django.core.serializers import serialize
@@ -8,6 +8,7 @@ from datetime import datetime
 
 from .models import Farmer, CropRecord, SoilRecord, WaterRecord
 from .ai_engine import suggest_actions
+from .openapi import OPENAPI_SCHEMA
 
 
 @require_http_methods(["GET"])
@@ -22,32 +23,41 @@ def index(request):
     return JsonResponse({
         'service': 'Smart Agriculture Backend',
         'status': 'running',
-        'endpoints': ['/api/health', '/api/farmers', '/api/records/soil', '/api/suggest'],
+        'endpoints': ['/docs/', '/api/health', '/api/farmers', '/api/records/soil', '/api/suggest'],
         'admin': '/admin/'
     })
 
 
-def admin_dashboard(request):
+@require_http_methods(["GET"])
+def openapi_schema(request):
+    return JsonResponse(OPENAPI_SCHEMA)
+
+
+def docs(request: HttpRequest) -> HttpResponse:
+    return render(request, 'docs.html', {'schema_url': '/openapi.json'})
+
+
+def admin_dashboard(request: HttpRequest) -> HttpResponse:
     """Admin dashboard view"""
     return render(request, 'admin_dashboard.html')
 
 
-def admin_farmers(request):
+def admin_farmers(request: HttpRequest) -> HttpResponse:
     """Admin farmers management view"""
     return render(request, 'admin_farmers.html')
 
 
-def admin_crops(request):
+def admin_crops(request: HttpRequest) -> HttpResponse:
     """Admin crops management view"""
     return render(request, 'admin_crops.html')
 
 
-def admin_soil(request):
+def admin_soil(request: HttpRequest) -> HttpResponse:
     """Admin soil records management view"""
     return render(request, 'admin_soil.html')
 
 
-def admin_water(request):
+def admin_water(request: HttpRequest) -> HttpResponse:
     """Admin water records management view"""
     return render(request, 'admin_water.html')
 
@@ -75,6 +85,12 @@ def stats(request):
             'soil': 0,
             'water': 0
         }, status=200)
+
+
+@csrf_exempt
+@require_http_methods(["POST", "GET"])
+def test(request):
+    return JsonResponse({'state': 'ok'}, status=400)
 
 
 @csrf_exempt
@@ -178,7 +194,7 @@ def soil_record_list_create(request):
         records = SoilRecord.objects.all()
         out = [{
             'id': r.id,
-            'farmer_id': r.farmer_id,
+            'farmer_id': r.farmer.id,
             'ph': r.ph,
             'nitrogen': r.nitrogen,
             'phosphorus': r.phosphorus,
@@ -197,7 +213,7 @@ def soil_record_detail(request, record_id):
     if request.method == 'GET':
         return JsonResponse({
             'id': record.id,
-            'farmer_id': record.farmer_id,
+            'farmer_id': record.farmer.id,
             'ph': record.ph,
             'nitrogen': record.nitrogen,
             'phosphorus': record.phosphorus,
@@ -208,7 +224,7 @@ def soil_record_detail(request, record_id):
     elif request.method == 'PUT':
         try:
             data = json.loads(request.body)
-            record.farmer_id = data.get('farmer_id', record.farmer_id)
+            record.farmer.id = data.get('farmer_id', record.farmer.id)
             record.ph = data.get('ph', record.ph)
             record.nitrogen = data.get('nitrogen', record.nitrogen)
             record.phosphorus = data.get('phosphorus', record.phosphorus)
@@ -257,7 +273,7 @@ def water_record_list_create(request):
         records = WaterRecord.objects.all()
         out = [{
             'id': r.id,
-            'farmer_id': r.farmer_id,
+            'farmer_id': r.farmer.id,
             'ph': r.ph,
             'ec': r.ec,
             'tds': r.tds,
@@ -275,7 +291,7 @@ def water_record_detail(request, record_id):
     if request.method == 'GET':
         return JsonResponse({
             'id': record.id,
-            'farmer_id': record.farmer_id,
+            'farmer_id': record.farmer.id,
             'ph': record.ph,
             'ec': record.ec,
             'tds': record.tds,
@@ -285,7 +301,7 @@ def water_record_detail(request, record_id):
     elif request.method == 'PUT':
         try:
             data = json.loads(request.body)
-            record.farmer_id = data.get('farmer_id', record.farmer_id)
+            record.farmer.id = data.get('farmer_id', record.farmer.id)
             record.ph = data.get('ph', record.ph)
             record.ec = data.get('ec', record.ec)
             record.tds = data.get('tds', record.tds)
@@ -332,7 +348,7 @@ def crop_record_list_create(request):
         records = CropRecord.objects.all()
         out = [{
             'id': r.id,
-            'farmer_id': r.farmer_id,
+            'farmer_id': r.farmer.id,
             'crop_name': r.crop_name,
             'yield_kg': r.yield_kg,
             'date_recorded': r.date_recorded
@@ -349,7 +365,7 @@ def crop_record_detail(request, record_id):
     if request.method == 'GET':
         return JsonResponse({
             'id': record.id,
-            'farmer_id': record.farmer_id,
+            'farmer_id': record.farmer.id,
             'crop_name': record.crop_name,
             'yield_kg': record.yield_kg,
             'date_recorded': record.date_recorded
@@ -358,7 +374,7 @@ def crop_record_detail(request, record_id):
     elif request.method == 'PUT':
         try:
             data = json.loads(request.body)
-            record.farmer_id = data.get('farmer_id', record.farmer_id)
+            record.farmer.id = data.get('farmer_id', record.farmer.id)
             record.crop_name = data.get('crop_name', record.crop_name)
             record.yield_kg = data.get('yield_kg', record.yield_kg)
             record.date_recorded = data.get('date_recorded', record.date_recorded)
