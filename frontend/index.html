@@ -1,464 +1,834 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <meta
+      name="description"
+      content="Modern organic farming website providing information, products, and services for sustainable agriculture in India."
+    />
+    <meta
+      name="keywords"
+      content="organic farming, sustainable agriculture, crops, farming services, India"
+    />
+    <meta name="author" content="Agriculture & Organic Farming" />
+    <meta
+      property="og:title"
+      content="Green Farming - Natural Agriculture for Healthy Future"
+    />
+    <meta
+      property="og:description"
+      content="Your trusted partner in organic and sustainable farming practices"
+    />
+    <meta property="og:type" content="website" />
+    <title>
+      Green Farming - Natural Agriculture for Healthy Future | Organic Farming
+      India
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
-    <meta name="description"
-        content="Modern organic farming website providing information, products, and services for sustainable agriculture in India.">
-    <meta name="keywords" content="organic farming, sustainable agriculture, crops, farming services, India">
-    <meta name="author" content="Agriculture & Organic Farming">
-    <meta property="og:title" content="Green Farming - Natural Agriculture for Healthy Future">
-    <meta property="og:description" content="Your trusted partner in organic and sustainable farming practices">
-    <meta property="og:type" content="website">
-    <title>Green Farming - Natural Agriculture for Healthy Future | Organic Farming India</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="lib/css/styles.css" />
+  </head>
 
-    <link rel="stylesheet" href="lib/css/styles.css">
-</head>
-
-<body>
+  <body>
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo-section">
-                <div class="nav-logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <div class="logo-text">
-                        <span id="logo-text" class="logo-main" data-en="Green Farming" data-mr="हरित शेती">Green
-                            Farming</span>
-                        <span class="logo-sub" data-en="Organic Agriculture" data-mr="जैव कृषि">Organic
-                            Agriculture</span>
-                    </div>
-                </div>
+      <div class="nav-container">
+        <div class="nav-logo-section">
+          <div class="nav-logo">
+            <div class="logo-icon">
+              <i class="fas fa-leaf"></i>
             </div>
-
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link selected" data-en="Home" data-mr="होम">Home</a></li>
-                <li class="nav-item"><a href="#crops" class="nav-link" data-en="Crops" data-mr="पिके">Crops</a></li>
-                <li class="nav-item"><a href="#inputs" class="nav-link" data-en="Inputs" data-mr="इनपुट्स">Inputs</a>
-                </li>
-                <li class="nav-item"><a href="#services" class="nav-link" data-en="Services" data-mr="सेवा">Services</a>
-                </li>
-                <li class="nav-item"><a href="#practices" class="nav-link" data-en="Practices"
-                        data-mr="पद्धती">Practices</a></li>
-                <li class="nav-item"><a href="#gallery" class="nav-link" data-en="Gallery" data-mr="गॅलरी">Gallery</a>
-                </li>
-                <li class="nav-item"><a href="farmers.html" class="nav-link" data-en="Farmers"
-                        data-mr="शेतकरी">Farmers</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link nav-contact" data-en="Contact"
-                        data-mr="संपर्क">Contact</a></li>
-            </ul>
-
-            <div class="nav-right">
-                <button id="lang-toggle" class="lang-toggle-btn" type="button" title="Switch Language"
-                    aria-label="Switch Language">
-                    <i class="fas fa-globe"></i>
-                    <span class="lang-text" data-en="English" data-mr="मराठी">English</span>
-                </button>
+            <div class="logo-text">
+              <span
+                id="logo-text"
+                class="logo-main"
+                data-en="Green Farming"
+                data-mr="हरित शेती"
+                >Green Farming</span
+              >
+              <span
+                class="logo-sub"
+                data-en="Organic Agriculture"
+                data-mr="जैव कृषि"
+                >Organic Agriculture</span
+              >
             </div>
-
-            <div class="hamburger" aria-label="Toggle Navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          </div>
         </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a
+              href="#home"
+              class="nav-link selected"
+              data-en="Home"
+              data-mr="होम"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#crops" class="nav-link" data-en="Crops" data-mr="पिके"
+              >Crops</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#inputs"
+              class="nav-link"
+              data-en="Inputs"
+              data-mr="इनपुट्स"
+              >Inputs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#services"
+              class="nav-link"
+              data-en="Services"
+              data-mr="सेवा"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#practices"
+              class="nav-link"
+              data-en="Practices"
+              data-mr="पद्धती"
+              >Practices</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#gallery"
+              class="nav-link"
+              data-en="Gallery"
+              data-mr="गॅलरी"
+              >Gallery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="farmers.html"
+              class="nav-link"
+              data-en="Farmers"
+              data-mr="शेतकरी"
+              >Farmers</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="contact.html"
+              class="nav-link nav-contact"
+              data-en="Contact"
+              data-mr="संपर्क"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-right">
+          <button
+            id="lang-toggle"
+            class="lang-toggle-btn"
+            type="button"
+            title="Switch Language"
+            aria-label="Switch Language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text" data-en="English" data-mr="मराठी"
+              >English</span
+            >
+          </button>
+        </div>
+
+        <div class="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 data-en="Natural Farming for Healthy Future" data-mr="निरोगी भविष्यासाठी नैसर्गिक शेती">Natural Farming
-                for Healthy Future</h1>
-            <p data-en="Sustainable agriculture practices for your farm and family"
-                data-mr="आपल्या शेतीसाठी टिकाऊ कृषि पद्धती">Sustainable agriculture practices for your farm and family
-            </p>
-            <a href="#crops" class="cta-btn" data-en="Explore Now" data-mr="आता शोधा">Explore Now</a>
-        </div>
-        <div class="hero-image">
-            <img src="https://placehold.co/600x400?text=Organic+Farm" alt="Organic Farming">
-        </div>
+      <div class="hero-content">
+        <h1
+          data-en="Natural Farming for Healthy Future"
+          data-mr="निरोगी भविष्यासाठी नैसर्गिक शेती"
+        >
+          Natural Farming for Healthy Future
+        </h1>
+        <p
+          data-en="Sustainable agriculture practices for your farm and family"
+          data-mr="आपल्या शेतीसाठी टिकाऊ कृषि पद्धती"
+        >
+          Sustainable agriculture practices for your farm and family
+        </p>
+        <a
+          href="#crops"
+          class="cta-btn"
+          data-en="Explore Now"
+          data-mr="आता शोधा"
+          >Explore Now</a
+        >
+      </div>
+      <div class="hero-image">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Agriculture Image"
+        />
+      </div>
     </section>
 
     <!-- Crops Section -->
     <section id="crops" class="crops-section">
-        <div class="section-header">
-            <h2 data-en="Crops We Grow" data-mr="आमची पिके">Crops We Grow</h2>
-            <p data-en="Organic and sustainable crops cultivated with natural methods"
-                data-mr="नैसर्गिक पद्धतीने उपजवलेल्या जैव पिके">Organic and sustainable crops cultivated with natural
-                methods</p>
+      <div class="section-header">
+        <h2 data-en="Crops We Grow" data-mr="आमची पिके">Crops We Grow</h2>
+        <p
+          data-en="Organic and sustainable crops cultivated with natural methods"
+          data-mr="नैसर्गिक पद्धतीने उपजवलेल्या जैव पिके"
+        >
+          Organic and sustainable crops cultivated with natural methods
+        </p>
+      </div>
+      <div class="crops-grid">
+        <!-- Methi -->
+        <div class="crop-card">
+          <div class="crop-image">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.GgeGvEGk5NiTC3PuvFATawHaEK?pid=Api&P=0&h=180"
+              alt="Methi"
+            />
+          </div>
+          <div class="crop-info">
+            <h3 data-en="FENUGREEK" data-mr="FENUGREEK ">
+              FENUGREEK 
+              <span class="marathi" data-mr="(फेनुग्रीक)">(Fenugreek)</span>
+            </h3>
+            <div class="crop-details">
+              <p>
+                <strong data-en="Season:" data-mr="ऋतु:">Season:</strong>
+                <span data-en="Oct - Mar" data-mr="ऑक्टो - मार्च"
+                  >Oct - Mar</span
+                >
+              </p>
+              <p>
+                <strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong>
+                <span
+                  data-en="Rich in iron, protein, and vitamins"
+                  data-mr="लोह, प्रोटीन आणि व्हिटामिनमध्ये समृद्ध"
+                  >Rich in iron, protein, and vitamins</span
+                >
+              </p>
+              <p>
+                <strong data-en="Method:" data-mr="पद्धती:">Method:</strong>
+                <span
+                  data-en="Organic manure, natural pest control, no chemicals"
+                  data-mr="जैव खत, नैसर्गिक कीटनाशक"
+                  >Organic manure, natural pest control, no chemicals</span
+                >
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="crops-grid">
-            <!-- Methi -->
-            <div class="crop-card">
-                <div class="crop-image">
-                    <img src="https://placehold.co/300x250?text=Methi+Fenugreek" alt="Methi">
-                </div>
-                <div class="crop-info">
-                    <h3 data-en="Methi" data-mr="मेथी">Methi <span class="marathi"
-                            data-mr="(फेनुग्रीक)">(Fenugreek)</span></h3>
-                    <div class="crop-details">
-                        <p><strong data-en="Season:" data-mr="ऋतु:">Season:</strong> <span data-en="Oct - Mar"
-                                data-mr="ऑक्टो - मार्च">Oct - Mar</span></p>
-                        <p><strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong> <span
-                                data-en="Rich in iron, protein, and vitamins"
-                                data-mr="लोह, प्रोटीन आणि व्हिटामिनमध्ये समृद्ध">Rich in iron, protein, and
-                                vitamins</span></p>
-                        <p><strong data-en="Method:" data-mr="पद्धती:">Method:</strong> <span
-                                data-en="Organic manure, natural pest control, no chemicals"
-                                data-mr="जैव खत, नैसर्गिक कीटनाशक">Organic manure, natural pest control, no
-                                chemicals</span></p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Palak -->
-            <div class="crop-card">
-                <div class="crop-image">
-                    <img src="https://placehold.co/300x250?text=Palak+Spinach" alt="Palak">
-                </div>
-                <div class="crop-info">
-                    <h3 data-en="Palak" data-mr="पालक">Palak <span class="marathi" data-mr="(शाक)">(Spinach)</span></h3>
-                    <div class="crop-details">
-                        <p><strong data-en="Season:" data-mr="ऋतु:">Season:</strong> <span data-en="Nov - Apr"
-                                data-mr="नोव्हे - एप्रिल">Nov - Apr</span></p>
-                        <p><strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong> <span
-                                data-en="High in vitamins, minerals, low calorie"
-                                data-mr="व्हिटामिन आणि खनिजांमध्ये उच्च">High in vitamins, minerals, low calorie</span>
-                        </p>
-                        <p><strong data-en="Method:" data-mr="पद्धती:">Method:</strong> <span
-                                data-en="Drip irrigation, neem-based pest control"
-                                data-mr="ड्रिप सिंचन, नीम आधारित कीटनाशक">Drip irrigation, neem-based pest
-                                control</span></p>
-                    </div>
-                </div>
+        <!-- Palak -->
+        <div class="crop-card">
+          <div class="crop-image">
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSExIWFhUXGRsaGBgYFyAgGxoaHhgYGhoeHRsaICggHxslGxgZITEiJikrLi4uGR8zODMtNygtLisBCgoKDg0OGxAQGy0mICUtLS0vLy0tLS0tKy0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAK8BIQMBIgACEQEDEQH/xAAbAAADAQADAQAAAAAAAAAAAAAEBQYDAAECB//EAEUQAAECBAQDBQUGBAYBAgcAAAECEQADBCEFEjFBUWFxBhMigZEyobHR8AcUI0JSwTNi4fEVFnKCkpNTFyRUVXOy0tPi/8QAGQEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/8QAKhEAAgIBAwQCAQMFAAAAAAAAAAECEQMSITEEE0FRImGRMlJxFIGhsfD/2gAMAwEAAhEDEQA/AJaXWqJIJJDj3R9GogldNLCi4G0fOaGiz+JSso9Xi6oqqUUJQhYsOh98ePh0a92S3sea/BaeezeAjcG3mDB2JSc0gSkscmgG7QDUzO7U+yoMlo75AULNY9eMUuEJJxS5OjZKrAvaPKQDb0gvE+8TOIMvMS1gDfpxjJfdkZkli7FJ2MeXPppR4NsDpSpE9IGitRyh4tBuOMKlTShQmZQrLY/MQWcWChnSLAWG8KlFNJs09YVRpXPUFAFKBpxO0PKWXLlrzJlhJOpTYHqOMRlDiC5UwrDOp3fTk8Vcuq71AUkBlX+fpHodO4qO3IN+QDF5cxCysiyjY8Y8SluIZCYogpWHG4O/MQixlZkJtfNZLcImzYbla8m2JUywqZNIIurfVru3OCqFf4qZSAAC552D6wP3aQhKks5Fw+/z5QwwiTLIVUzPAPZATqo75X3/AKwco6tvAI9pZCEfiLspINzz19YGkYrMnHJblyH9oUYli4mBUpEkIDHKUuVFrjNxdo7w/Ee7UEkWIsWukkfDiI1XGKSex3g3xCtm0zMznch9NCmBpOJGbM/HXq12A3gHHqjOgkrbK5D/AAgOWolCFmWVkJTZKSSDsSBeGQi5r+4cVYzxBac5QhWZB0J1jmDUC1zDKQQNyr9IcP5wJhmElQ78zSBnIUjKQt/P6EU+ETZcgKyS/aZyVObQORwxzqTOklFj5VOgJ7sBwQyn1LhnPOPilS5UoAkZVKHoSP2j7DKqAbvfhERO7IKqKohC2QoqWpQF0+I5gBvqG84uwZoy4CxypuwTsjImVU9FOD4NZiwLIAB+JDQX2YQU1E+ZdSEOlB/3EZvMD3xT9qscFHIFPSyPGU5MybBAytmO6lnVokuylVMQVy9CsAiz6W36wzI/i2MlJuLZWza7iX06R3JmAJJJ1t7toVFfj7shjYA8eJg8pHpHg5cjiydAlSSlIJ0Fn3PB4xRV8GH1xhhXU+aWR0hJIpyHBIHxMDGOqOpmPk9YvMWsOyXMa4CqYiWc5zZjYHbrGBmi+hYOz3/tHqnrM1rONhtFMr7eyNp8hdTK7x2s8a0tIQoJezanQNuYDl1HONJ+IOBLDa3PGEJNqmYUGH1SRMSEDwDR/wAxbU8Yo0Y2AWUkeUQU0qQEksH0hrJqjMHBtesV9N1EoJoLU1wF10tdVUZUhgd+CYp6aXKlgSkhmERFQgkZRMUgHUpJB920OsUWJEuWmnLWup3JPEk6xT08knKb5CjLyUVo5ER/mOp4p9I5FH9TD0wu6hHICZiJi05Qyicg2TsR7oFUtoW98hSmMsJPIke92hvSURnHKApBSLuMwPN7R5csW9imgikxlQTkX4hsdx84aUeImWhSkh+TgAnziZXTrSohJCik9GPN4Iw2i+9TAFuC47yWHAbcgjSH4rTps6K9lT2eFRUKVPneFPsy0s3Ujc8HhV2yo3nSWJTmQrOX1AUG9HN4rZ6nUkAkBICUjgBp584ke1E8qnqTmGVACU20dIKn4m4huX4QZwq++AjK7s6FHjex9IDTOUjMnh9CFip7LUnQPBBUVEkn8vwEI7fs5gM2unKJJBYWsLe6KvsdiBS8tZZJuL6H+sRyVrdXdqUC+xt5w5l1c1IaZLD6OzH1Fnh8o0k0a1tZ9C+7TCWNhx5RliFKFjulpcFmPA7EHjygmidEpCSSVMHc3BO3lpA2M1PhSpOqT6gs4Pu6RkqirAIw0SytcobKYlrJaxJ5CG1RMcAAMlAZI2AA+J1ePOXKqYoKfvS6gAwDXA5l7kxjOXZuNogyzt6Y8HHVBQqXNdGzeI6APr/SO+1KMk5J/XcMGFmBAuYc4SyUc1F/IWHvzQbPlImoKFgKSdR+4OxHHaKMSTjuctiOl1MlnVKExTggHQEfy7nSKfs+lQRNKChM5Z8S0pBCTsBxIG2giNxHCaiVMVLlBS7OFJ1ykn0NiD0h32DqFpkTkrSQUTCz2sQLP1B9YpxQ0rVYWn42cppFTJXMRUr70HxImMzubgtvbSCUVAGqffAZxvvwoK8JQoht2266QIa8Bw9tuX9I87qI9zI2kC5D+ZXJly8410A3JjlHiBSgFKgFF/CSAeDX1ET4xBawyDlUPf8AKB6wqKpb6td+LwzFcFRje4KmvUahedCityMqiRvc9IeYOlitWXKdEnluxjEzAQElAUQXT+oWZgdW5Q5kSky5QVOdCRZKHGdW/wDtF9TBZs0skaih0slqjxiKpaAlaifCbHiTZul47M8NCypmTa2YBLT+EEsP0IDkeat+JhvQ9m8iAlU0k8hb3wD6OUoqgGweurkAFBWAWduMC0UsrL7EtCuukhM5aZiisAn2bcbb7QdLrJcuWQhS/NnA6x0cKjUQXuL5dPIm1xkoBJDjOSwDe0Ya47i1MhJFNLBZkqmnVZ3Y/vAOAUomLWyWlmxO5bZ9eZgyvxVKFy6emkoLkArIdKeg3MehSkq8DbsSqq7PrHa1tmVwQSOsbYtQ5FFSlghRdgG9ANoWV1d+W3sszesIjBatgUt9hth9aubLQ9yILlVqpU5KFaKYEDiTaFXZmuyglukUkmbIp5a6+ckEi0pJa6m2D6v8I3tJ5GjWt2g6oTlOUm4hJOnqTMBCoW4Hi06YVrnKHiUSOIfUdIIC1fenCDMSACEtY9YCeFxlTMcGnuP3V/L6iORvmH/ilev9Y5HaV+46hBMwhMyyfCeBLht76j3w0o090gSkWSkeZ5nnHqjllOZSkEPyYe/pGpEedkyzrS+DlweAgrSoHgWfY7NwjfsSkmSsg+IrY8bCwfg5jeVsbQ2SUoSClCUpcuBYeI3PreK+j3u2czrMygXY+6IXFasGdMGUpOY2Iv1vx1ivq6kZigFjz3tfQwDiuFSp4Ge6keysajcjmniD8YpyVPZmUSOEUSlJVNWlGVSilJWzMCXZ9PLgYImUdNLGX+NMO4UQhIewsxUW8o9YhJWFZGdQHhCbgp2yjWJlUxaV+J0qBukgg+hjE5Tto63Jj5NPLCFZRlUdAzg+pce+A8HkArliYpbmYlkg2cqF1O9uWsGVkiYJYUU6t1D6Pwit7P8AZ6XJSJkxOeaQD4h4Ubhh+rmfKNwuUtjtTSo1qlEHXX4x5qpWaWoAEnLZzuNIY1VGmbbxI3zILHzGh8xC+topiJaiZgUNHA8RB1ZGnKx3jJ42k9gCf7sufGnm+bXkWg2lp5aR3i2mKHsywbdV7tyEAOHYG42Ib6PWNhMbX0iDU4u6NsPlzFLSlS7KZyAGbdm2YWaNVVIYJu8BipbfYPysIPkhNlbsL+UUKzAylWPZs+zjW2zwDiaU5s10rAsb5T/qToR7+cZYmCUjiFAj1a3O/qYCpMW+8p7pbJmJdre1ZnHPiNNxD4z2o6wCtw5C194xlv7aQQ5PFO3nwaF1NSZJ4CjnlEsM2otbMBzbkfdB5Uy2VqHHlrGVckEHUHiIS5u6fk6wuqw0EugZVcB7J+R90HYdgSlITNqCUISXt7ahow4AxxEwKAIIIId/rzggVDgJJsHLROszi2pKzaNFTE5j3SBJR/L7ZGgdRu/RheMKPDO/dbBMskgWfMkWcdS994xoqsLUASQFLZKdyNHA4cztFMZwFtOXDhFGGF7zOYpmzhS5ZeS35SkMnnc7/ODq7EUIkmYT3YZkl/ESx0B1JO+0CdsS9MpSbFCkqc8NFe4v5RL4X2dqaw99MXlQbJXMBcp/lRw52HCLVqt1wcl5AClSwFJBUd+L8YCqc6VOUkX1It0i3Xg8rD0ZlTFzJkwDIgBILA3Otk31fhEbj9TMXMExaWTokagAOW6wOinQSW41wyimLl92JjAl1Mb325CAq6iXImZjMSlKSC5BPwEKMO7Tz6dYUWUN0kN4eD8Yv8OxylrklIbMR4pa2BbduI6Q1wlFb8DXa/gkpaPvE0ZZ2Yqe+U2bWGiOyqSvOqcSBoEoA+JNoaVEynpQlISEJJCXAdz/ADKgiXN9+hjzc/UZIy+CpA6vQgo+ysxKmExKgVcwQOcbdvpQUJUtiQm7JPlvtDxSztxiUx+avTUu9/6wfS55zmm+Tk/kLlSUFJCCc+gS+nUw/ppgQhKVTCpTXyi3qdYlRieV/CM3KKnstQid+NMPgFkp/Wrh0irqYSez4Dy35O/vqeKvSOoq/ug/+GlRyJOxERZjPXkDbE8bQOmZuDAUmrKvCrhbnygOZUsXSTrfl0O8IyYu49SOuihp5oOrRvPxLu0MdDb6EJqWtuCpiNCQNP2jXGZJMvMLgMPUxuOLiF4CChM1SFJXkmWYjTVnv0h/S4YkPnW+4At5PCXCpUpElKpoSZiQWBJAAdhbfcw1TViYnwKYahgNf3HKPQxY1ywGxnJqpcssJYytcJ3bR/6vCzFsOlVaCJyHINlp9pHBj+xsYFTOXmJmJFtwbH1vtBBnuoJcPyNr63G3wilNHWxPilKZKkglKgpmI0IPwPLa0PZs0bE68m5XMesSo0KllJKfCysxJYMXU27kOH5x4nSgD4Q125P8tfSJ4Ye03XDObs9g2F9eP1r8o4s2jqZLB/aBpyyAnfPoRt+p+l4Y3Rh4xbD0zQHYKGitC3AtqIlVliULsRZ+HXiOcVlWvwlz04HjE5iK86ivIBpodev1vEnUxXJwHVA5he5bz5xQUKQwB4DblyhLK0Y/2htJUEtxa5tsHJfg0LxST2MPOKImLyIlyypRUDcMGSoG6tGJy/tpA9NhuSoUvvEpsSsILpF3YrIAGjnhxEe5mMEyu8lhhMFjux09xJ5QqxSeqXKQlIZyMw42cg8hbzvDZVGSRpliVWpa5pSU5ZamTMTuCWTmezm4BGurQXgND3yc8wnIlsymPibYNd9BZzcQrOG/eZkoJUlKHCpiSSNPaNrHwjWzcIZ45WqUEyacZZMt2Dsp+Leu7vfWDnodMJ0dJmIzrCQmQjM8tExRBykBy1zc5i54wMqoIDlSTswN+vSPNHNVMSc7qALOq5vs50PvjxU4U4eWsli6knUp3Yjls0TSUXLfZg8nrAFPUIPAKPok2isnVVtI+eSq5SFiaBop24i7j0MWEyqC0oWhyFhxa7cxDMilFbG1Q6piFJGZiCzA6a2JhnLqAlEyYoDKhJJWTYM7q9AWifkzr20gHtjiBTRzUJJGdkhI0JVb1Z4pxSqonR3ZF1GLTayqXOTqSAhO4Q7JDdLk8SYtZDhIFnbxEcWu38vxic7GYEqW85YaYqyEnUDc8idGN9eMOu0lQqnp1qy+JQypfiqxPkHMT9TJ5MmjHxxY2VN0iVVjqvGkZTLJLBSQbPZt2gampqda0nvu5PFIsCNDBeE9ka2chCkSdWbOoJLcWVdoW47g82kWEzcgUSfChYUQx18OgO3GPTiklSH/ABqkfRZGDmqkGWamWrw/xUgF2NnSDY8fOM6Ds7OppcxK5iZgBdKkuGG4KTp5OIm+wGIZaoAgvMSUknj7Sf8A7W84+miaePpE2TGqcGImtOxMJnOk+JKLPmUWifxmokiWDKQJq1WSpYc8ylO1+TxX47hkuZLUwyK5aE/6f3EfPplfMpc0pKQJhtmIdSeQifBi0yoGCtgNPVJGWSmUe/UoJUtSdHIFgdNdY+nyFJZMtSvBLQEjKwdhHzjBaU95mmk5lKfis9TsId1MxSl5EnKkB9dYb1DuSSDyK9kV3+J0/wD45n/NPzjuPnrp4xyF7/8AIXpPoNX2flq8UomWvYP4CfO6ertyiar5gScqpTTEk53S5fr+41irRPbz5R4xlACUqWkKB8JUdUjZjtqYmxS1mtEbIqkPdJHNJf3H5w1p6lUxJlSwpRIuGtyL6DzhRilOETGQnM7EcVPuG35cYsqCdKppRCcyQEgzS4cqa4u/FgNoojit8gWKqAlU0JmJAOVigkO4JSq78Q7Pu8NKb8wSRlCiABow58NYhqqYV5yrUqKw+4Vf0d/WDsGq5iQpSFewHykhiNwH/NyHOGxaXBskVUxKifabbW3nxMH0SES7oJJLeLcq5cnhHIq86St9W+B/f0hvhpUWUBo1yAz9N7NBwasE0x2emRJWuYCoAADmtQLDlpBNJM7yWiYHZaQsAtbMH67mPn3bCtVNqpiTNzIQcoAPgCgGUw0d8wfy0in7GYjnkd2dZZax/KdPeFW5RupOVGtDucg6pW/l9NAiErzEFhYkXsSGduZA1/ljfOU63/YQNNnoLhybbEWLFn8/3hc/ZgJWTQoXJuzMDfjp5R4l0DggsXBF9n36iNpyDmCdtbaMC+h28oIzAXuYVWp7nEzNHdllJZmBbfZ72PWNZ9clCQVByRYEOD6hoIxiWVyyo6jbduAbhr6xNYzPyy02dLseI1Pr8oTDHUqXk5K3QerElEguCBoFAFvMi0d1YM0oCRq+9gd77BrwpkL5/X9vhGlVVLl91MSSMubgQfZFwbH0go47nudGLboaVChTgh0qWWDpcjmLt9ACBBMDsS12J/t9WjGcov3jElIdKRx4/L1gVRLAsQHa/EbR3btWZRQyES5qFJBOYkKBFi4III14R6QSktvCORUNvpGkuvJVwD8d9vIwE4OUa9HA+LUakVAKActleFV7i4sXAflpaCMHq1Pd2zOqz6hv3hkirQoewlTHxBYdyHKdwR4TsQ94LTiBLhCEyk2BEsEP/qJJJg5ZVoqXKCcrC6acGUPzBgBy324R5nKBawtpxB5cPKMO+t9aRrTIMxaUJ31PAcbRLKc8jUYmIJwuR3hISHIIv5t0jnaKlSJknOArI6gl9Vm1065QA44npc2rxqXToEuWXWl2ayEg3ctcqJ+ERXaGYtUsTROSoqUy0v4rixJ26bR6EI0ljhz5YcI2wLHe08+aSkTDLl39g5SrqRdusIjWAs4HkLkwRJoh7M10jZiP7QNIkoRMdSVLlvsWPR2LGL4RUVSK1HTwbHMFhSDkUkg3O7uI+sYViCJ8lM1CgSfaG6VDUc+sfPZGJUssumisqzTZhUPSG+DdoJCcwRThOjolgnMehsOsBkTa4F5I6lwV8xQJHviS7SS5Umf33dIWtabZwTcWdhZ2aH9LiEuaT3ZdjdP5k9YExbCvvKQQrKtBdPBXFJ6xJF1LcTHZ7kPh6151TLHYbXNrPDfDcOTJK1VE9h+VMsvrq5VYdBGacLE1YlpXlBLqcXS1svWA8ZoFmaqnS61JuG3SzueEOdye3A5u3SHX/seMz1THIkvuk79HvHzjkd2Y/uN0L2fY8EwQLSJinF2AB4bq+QgftPTqCMkyySfAoaONLj4QhRi06UpSpKylwbFiCOBBDedjwiiwjtfKmoyzQEqtxYn1ZuvviLEoOGlbP2T2SmF4cpayVeASvxHAupuB0I5xl2sqApSZUtSghguZa6l6h3fw6Hf94qa/DcP/AIwnsoliiWrMwOvh0SN9W4PCqvoqEpAQanO7lZykEbDKSNuDecOc1BU2rMWxITphG5fd4ZysPKVAKGviAOm+rF9RBUvCqcKCu8nG7gZEC4IP6ja0MaudLWQyVA8Q1ug3vfXyhfcglyYzPD6RYTlfVXHS3SG+I4immkKU4cJyy0/zmw5Ei6zyG5hPJmKSksSVO99S3DX0hDj9eZs3u9pISlhpmUAVl+JNvKGYppptHJC5KtVG5uSTudz5w77JV4RMGUKZTImEtqXy5d2DXfiWhLNIAAf1juTUFCVXsDmgo8WHHg+pTJlrg3gFdO+buwBxvy2f6vE72O7Td48pag6BZSrlSTzcXBbqON4dzsQYHKkglwbs420P15wrM3B1IGSp0zWVXKmOCQ4bbyjlVUkAIBAJtfYQMiekqf3s2oY2+tPXkuSt80xLAOxJ1204WhcZvgE7TLCjdyHYDe7/ALRMBOYFLODrzh5iVb3cpax7RGVHnqryH7cYn5KtCY2S2TOBaiSWC0/l1HL+0H0CWGc/7fn9fKMispVlAdKkli2jHfrtzSY8LqjGyUmqNdnnEKliwYvq4B16wCuZ4bBm0Yn0uYCWpfeKUoa6B9eHp+8aTZpCC9rjnZ2PoYpjicUkhnbaD0EqIZnUBl6m1xxd7dIOnUJyKyBi/wCc5X2IGZtNYxwrs9UzijKkoSWOdYKQA5uH16dOsXNL2UQoeOYuYoBirT0BB+Mc4tcAvZkonD+7GZVQgrIAKZac4LGzq8P9HjuVPTmsbNv5dYYY52eXKlmahRUhJYg+0kaPbUX1YfKbCsqvWJ8kHLkB2x3KqAosDobnhzjDEseEkKlyCrxeFanYkHQcQndtTvCbIZZUXdwG59ecCrlH/cbtG4sUYuwox3DPvxU6R7RuS1vMxhPrciVoJ9pTm2hsAL7W98L5tPMljMvfQEX42gzDJoW2ZmJa7E6WtrF8cSjuiyEaB6eVnDA73YfVoNoaJSVEKKlCwyhTOSbF72jBX/t5geyS9vdBlLXKQpyHDW8XofK9oZK62NfAxM6cgnJQSy7DNmMx/wDjvyjSbRVsxCsyqenSC3dvlUoWuEoCi19y9jGcmqRMukg/GN0qjzn1Mo7adyV5WvADIoJ0g5pKkLO+xPLxWY9Ypf8AFciDNKSwHiBHiTe/mIXU8lS1ZUhzsNPjaNJVQ4KToX12OkKeeUqckC5OXIXXBBPfoUCJmV+ZGh6taFeKVBSiYtIZS7HmWZz0ED0FQyFSzr+X/UNPWMqarqZi8klGYbnQJ5qUbAdeFobGDlP6DhG2Tfdn9ZjkXP8AhNR/5qb/ALFf/rjkVdxel+RuqJjSDONRcsEDX6+McqMJnIJUJK8vHIYiqbF5yFPmKhwUXB5X0iklYrmR3iFrH6mUoNxsDtE0+meN/QlwaGlDMUoHwK8NicpYdS1vON1W6fD+kaTK+fK8Ksqgb5mvpxDe8bQOJrqIym+ha19idrvrraJcmNeATUXvHDxNozSctibbHlHRmXccGv8AGJ9JhrnGv7wpxXG0LCZMuVLZyVryMvNmJLKs76G3GN6udlSW+nidlVGXMkIRf2lkOtwxsT7I6M8XdJClJhQ8jqiwDvwlZmZXcAZXsLO7jWBkYdLmTzKQoiWk5VrN/wDUQB5sOUD0mLmWAsqUpQGWWgOAzMLC1tecB/fDKl/dwGKnVMP5lONCr9La+cWqD4GKMuCgXjNNTJMmQhJOhXtw1/Mrn74XUvayZLWUlCZqWa9iNyUkba6wmkSUqKU6JP5g5I428+GwjqZRpRMPjKk8WYngOsMeKL/VuGsa8n0XBsQl1dpbpLOXGg/fhD7EQkJEsORlGW1+rdb+6EPYHCVOmawClOEo4BgXVwOW8Oq1OZRSDoAX2uePk/mIjljULomkknSJDG5xMxgbJGUc7O/n+wgGgcqy35ngNz9a6Q47RUZTMSXsQErZnBAIuOg90LpiggMkMNuL8zvvCnXAJ6rMy5gy93LQgEDOq51JJa5udGtHioqKSTLIvOmKTa2VAJ/1EKLXu122eA0nMoJFyTHWP0ElCwBmXMIuCbJLMGHW7cBfWKMK1PcbjVumBS5qV2JYjRV2bnfrFB2VwhK5nfKHgQoZU5gXU2a7bC3m0SKpU6Y6QhRLbacnOgj6zgEhpCZSACpISMoSzBnWonS6t3c5oonUVSGZJaVSGstYJLJ/dtx1taJztJ2kSg9ylZuWZJ8Sz5flEMMfxEU8lgRnXYcuJ9L+YiVpaSS4mFKEq/UdTbiT74nlUvi2TqvJ4R2zmALp8g8QKCVKcpcMWAt74ULmjMHSXZiX5a846m4ahdQoyxkSgJKrk+M+IsSb6x6Kd9/r9o6cYxpIOSS4OTFHqzmB3BcqOl7hWnVILdY7qahMsBRBIfTj/SB1TzUKBUtQVcMB4BewA0FoPFj8jMcLC6aqkBBEyaCD+VCFLPkpWUDo0e6VSlES5KMgJ4ZpizzI06C0CVWGslnSXdiLH+8New1GpCpyyXSJYAL6KUb22OUK8ieMOm1GLkOk63YNOwmbdE1ASh7TLG50Dh24XhcVmUspCtHAJ3BbbQR9EElKgUqAKVBiNiImMbo0omuuVnQzg5SUgD9RAs3NoXh6jXswMeRS55EaFpF1BlHRQPwAh/gEqZPACAtWoK1JISG/nuCdLaxp2aw+XUrUfYlIbN3fhzEiyXAd7FzsOoi/lTUJQJSUBKU2SkDwgfARmdwap8g5pLgwwjCUypbEvMV7StgLHKnkDvv6RJ9opolTiQTlMzUepfk7xV1OKCWdNLxBzKteZSly0qmDxZVpsdS7cbmJqTapcCoI7mU5M21iSOnX64RVUEpMuSCkAZnWopuCdHHJg/mYjJ9aVJQVWSsMQLMX05CK6TMEqTLljZIHkDaNn8Y7hT2iZ/eB+qOR199T+n3CORNaEny8ADW3WN0ViQsBIISQEm7vxMX/AGYNL3ZBojlScpmTMq3IDquRYDlAeO4XSAGbJkIJIcMohBA1ZKSzx6ks0b0tFbkuDzTVCVFIUogENfR9C/OCsJxMS5jgu1jtb6vC/BcFqaoZ5aAlP61EhHC2pPlFRI7BDMJq50w6OEJABbVncl+MTPC27EbHnF6DvHXK8RsSEtvoQ3HhC6ZgtS1pYfgVpf4xbSqZKEgISkAflI+i/MxjPVyA6Hf5QLwq7YB80XQz5SFCcgh1e1YpNwwdJNuTwOcNKr2By3JdgkkgOz6lJb+8fSJyFbat7tWbcxO1tCkuUhiGdIHhNmHQ+6OlOnZurcjZ2HmWpK3Ch+Ytcchy2e0CpUolwxfYC+uh3JijnygoFJ3eA+yVMhS+8XYhWUFjawcjncN5w/Fm1JykPjk2bYMns3W6plW4GYgHXRswPlFFgPYmZPR3lSTKBulKQO8PElwQnkCH6Q5pZYEtU2YrLLS5KtywdTDkAXikRUOARZwCOhDwfdbQDyyowpaREpASlS2SkJckOwTluQBtrGCsLHeGYZi3JuLZW0AAZ2AbeNZ6yoKSd3vxMRVFjM2kPdLCpkoFgndA2yE7W9kluDQnaT3FcjLHaYS0k5XcjxDlx4Wf1PnH1NVmVyD+u3uAj6DSV8ufaWpKgQygbFtwpB66jhrHzvFcPMqapB0CmD6sbj4NAxirs2KOU1SUqzAeJrdTGU2lWk5pxyudyMyibq1Ng+/CB1TSg5n5OIGkkOCohQH5S9/o84pxQfJRjj5LbAezk6pCZyilMoK8KXZyAS4GhD7vwixrsdkUklSVWWTYWKiOAGr63Nrx80m1k4oTKExSUpDMFEEJGibagWDmBe6Lubk77mFykkJnyG1+IrqJhmrN9Eo2A4fPifd2KlMsBSiTsRx5DlpfnGKJYQM6ywF7/Xk0JaupM5V7B2A5fOMxw7j+jYQ1DOkxNAKkpVlzKKiqYXDnUukW9INnOgOocAWLi/PgbXiYEkuzPt9c4oaVaZgRTTCE52SlW6VhmzDRSCbcQWhmTCrX+RrxitU+Wu6hOIfdSP3EO6LB5E5BNNOUZgD5FWvwIYNwe4hTjWDzJB/EBc6HZR5K36a8oCwytXImJXL9rhxB2I5w2rXxYX8DGokuznKoWIVYZtFBxoXENeyU496uWxdaWKgXDpun3FQfmICqZ4qpiloSUqUxyK0UQACA273vryOrKplmjMtYWo5hlUqwZXtW3ytoC/snky8slWjy/B03aryU0oKSGb6+vjHmqdcpSM2UrSoOOdvocI1++5kAkWISfW/wgOuWAAQNf68fKPOunsR8HrszJ7iSJRZ7lXMkn9mHlDqWX6fGEaJtrF9Gjqdi5B7qWTn1VayRZv8AcfhGqbcnJm3bGNZUpQfCAVub8Hb3xOY6palBepAD9HP00GyEH2i5c67evGEM6s/GmLMsqY5RazBr9dWjelTnkbY7CrYRh0sXdgBdNtX+UNgrwAdfiT6wmoapKwVJDX02g+V4raNAZk9VMCfNHru+vpHI17tX0oRyFUKFOL1gQpVIZijdilBLPr7j5PHOxWGmZUfxPwUupYuxuwS2z3uOBhNMmqlqUgHMSTmNtXuSToYufs2pgZM0pUlSiolQGoCU2HnmJj19CjHYrcdMdi7EtCZYOdItZIawsAGGn9IT1WIkK1LdPq0bTKoZNR4h5+UIlz8mbw5n3J08mhGTJsIHqa+7Ku4841XIzDkdC+sSlLX5ySdrDhz18oPXUzEpBlrIUQWGoI10Ns39uELWS+TGNFyABYg3FjueEJaiSu4Dgagbc9doxl9rZwStMySSRYLQX88mwvxjOViK0vd92O/y8oXmkotejqFXaGUJYWUuQXAP6VHZ+TvAHZhRmS7WUSpiTsybnzeKqqqKefKKVSilXIhjxc8+Y84nqKQaZZXlzpAsklnUbJB1tu/AQ3HKDi4phJrS0UEyS6RKbw2zB+J0bnqfLjDGZNKAmxZgLGzizH0PpELR9p5iXEwZgTqD4tXu9jtwiqwbtFLmrKAQSlLgFLOmwOpI3H0YZOD0mODSDK4HKFuSWszavvfSE4oxOda77AfH5QfVUxKiUANzLNyHLlHj77laUUjk0SJ7gCKZhOTxJLMRzYbni4G3KDK7BjOQVOmawtMllyA/5k2UfMFr3hpLKX8btrb6NvKEGITjICMq2IWpimzgh/2g93uuTUTmK4YJSAVlTqNmslxqC+7/AFrHjupTIWhJQU3LkkKtY3NiDw4RX/fpdTLMqpQFAl3HhU/HMBr1eFNR2WUEtTrC7vlX4VdLnKdNm6RTj6mLWmTplEciaoBw8hYBCWJ1Or8D8YIExIULhzt5xguUtH4SUlKt7GxN9NhreOU2HzAUElDpOYKzXO9wbA8o7QpO2wdKk7bMK6XNWpSSlmNk7EXuCdevygdNArKFsClyPCWYgA30L/IwbXCYpTpll79COotGyJJRKUZjlXeJUCNEgAvpZrh31aKU0lSHrStkDYShLupyHdtSA+oaz668IxraNCpispKbkhgePMasY9T5jHvEetwL9A3OOpCVqfxKPItw4k6QX2H9FJhmOS56futVdfshWgUdi49mZ8T6QlrcMXJm8WuFM+Yc+B2gOfUAzCCEOCxA9NSGMNZSptT3cqS5Wo5QFqccT4iLBhd3gFHS9uAFFJ2gKXVShOStacpSb9QeH1pFVNEuahrLQpjrY7guOe8TuMdmKmSFTFoSU6koOYJO7tcDS5DQjpaibKU6FG+zu7X0hOfp+61KL3QE46t0fRKXIlGRyw03YcCbOxfaOqyXlRYkjbl/SEeH4smaw0JAcfW/1tDySt7G4Nr3jy8nchL5E0o1yL1TyE6KVlD5UpctcnmesKMKxaR3hbM6z4lK34addoOSJhmpShwxLq2SBYORxO2phpS0MqWszQkGYouVnjvlH5fjzilzxwxvVyw46VHcpkVpCcqgMjNk2Zueg9/xiPx2VKkSUS5KWJW5US6rAupSjdnIDaX0hsJrkecR3aWuJnKYuwAA5Nm97wHSSyZMvOyCxcnVGpSFBLgv4ma1+N4JNYQ6+Gw6tCimrC/s30Y6wzIBBJLD3+XHpFmeC1Wwssd7Df8AEpfP0/pHIY/4JQf/ADFP/D/+o5C+1H0BpQgnYUibOKlTkywsAtlKipWhAAIGo34xRdna2XTFYkTFBwC5ToGYt4QC99HhIqjQyUupkFwxY+Z4HgPdBtNUJSRYEAjw7NwbpHSzfFJHOTqilM55SVMWAI95+ULpi7G9jsQ9/WNJNcnusqT4SVAZtQH0a+0Lpiw7FvVg0Tye9C2zOmqCnZkptzPH3mNaeoK1BKQokaC5LchwhbPmMTdgRBHZcqSqZPcuBlSdnNyfIN5kQcq02zqGaqUJX3ilFKjcoAv/ALnsHuWv5R1VLCjmFn2/tHiUsLsfac+e8H09KhIzKDk+yDo3EjeJJzfk6hSpYexjpZChlVv9eUMVzi+iW4ZQ3wjKqpEkOnwq4flPyPugFNWDXomq7CMrzAolI9oaEgdNeOxtpDXDwKXLKf8AEmMua35UJCihD8wok+Ud0VbJSo98VpSCGIDjPzTqQBrAk/DZkyYqbLmJqEqCvEFAKzcClRBB+UenCcnCpjFJuNMr5U7whRbK1jyYEQvq0FTlIcpD88r3b1BhZglWpCDJmE50XAIIISolgAdWPkxDQb95yKzZczOFA8PR7Ee49YTKNMBqjqnVnBULpDO/utCftRNTmCAxUE3UXZLnQDdXO8EIIQBmSDqptt/SJ9c6YtZyoQ6ruQVHgNSw22h+CNuw8UbdhmGoVNIQi5PO3DXhFeqkMuWkKIKrAl7E/u94B7O06ZUtSlAqWvKxI5l/rnyjD7QK8oTJQj2nK+WwH7+sBLFHLsCt3SGi5SJgAmDTRQ9ofMcowqMPKUhThQ4p0PyMC9n8S+8SnIIUCx52F4ZSphT03Gx6xGpyxS0SNlExpcJSshJJG5JBcGzhvdpZo9Ynh8uQnvMzJTqCXUrSwAAd/SOsVxDIgzPHlGqQxCRyDhhELWVAVMMwskhsrWV58LfvHoYIxyK1wFDHbGOHiX30vvEoVKcOk39pwnqASL6aQbjUmmKyJLIIZKkpDDMQ/DVjCgYoMyVZnUDcGz2G2jWePWDSZc6pSZgTdRdOb2rEjcEF+EUu1bfhFPDs3mUCJ0iWlGVJQPaLC2YhWY83frFV2EpEMubqUHu0KuxSfEoi2pYDkBzjOZgEliElSX0Sogod3FwMw98GdmpVXLM1NQgBPhKCkjIzqDJY21GvCJ8eVSTpiJS+LofFOXxev1wiR7R9mpTqqJaQGvMliyW3WhiADxGm8VC51iAXzavt08oz16aHnxHpHRyU9hUZ6XsfH0j8ybAF+nC+/lFXSYgO670gsEueoierqE009cpyyVEC/wCUsUtxsRBVFNUy5arOQsfE24wzqcSmkymcVJJh2G1hCe8USxPitxJYn0hzKqbaAvpe3w/eESgmZLWEhlEEsNH1e+hzXPWF2GYgpCsi9HYfynh9bxLl6bXbXK/0KlDmvBUzp5AIBvlN+DtEli03xJ0zBLKtrw8wLekPMxUFHyhfNpZd84mOpRKQCAbksGUCXazQXSRUDcS3MJE1c05Uy0hVg+VvidRDpWETP4YSpRADrNgTHrA58tEpZS4mG1w6xbZgPQCDpVRUyU94u6TbxMSk7bv5Q7NJ3VG5J70LP8r1HFPr/SOQV/mCp/XK/wCC/wD8o5Gdx+0DrkfaR9mWH/omf9iozX9luGnWXM/7VRbRyK+1D0h2leiNk/Zph6U5QmYzv/FUfrSO5v2a4eoAFEy2n4iosY5HdqF3SM0x9ETM+y3DVBiiZ/2qjak+zbD5aciUTAlyW7xRuWfXpFhHI54oNVSO0r0Ry/s1w86omf8AYqCFdgqIsSmZYAD8Q7BoqY5GPBjfMV+DtK9Er/kCh/Sv/mY6P2f0P6V/9hirjkZ/TYv2r8HaV6Iiq+yzDZisy0TCf/qqHuEcpPsrw2USpCJgfX8VTHyMW8dEQfbjVVsbpXokD9n+HlWVl5kh27wuEqf3EpPoY8n7OsOBIaY51/FLl3b4H0g1PZWx/GL5coISxCWnBnzOf4oJJJJyXLlx7HZp5hmKmJKiQonu7uFzlWOewaaQNWypN9Izs4/SM0R9C2d9mWHqd0Tb2/iqjGR9leGBylE0u4J75R3vva490NUdlmQU974soSlWVRYhWbNlUsgk2cGxa4LtHs9mdQmdlBKy6UMpOdcxbpOZgfxGJa4SnRo1QilVGpJcAqOwtBmLBbpCQR3htYNba0Y4h9mmHzy8xExVgG71TBuDaeUN6fBFIWViaASnKUpQyQLB0jN4VMNXOsYTezZUAO9CWRl8KCNpgceMs+d1cSlJtHLHFcIzSvQLL+z6gSMqZakp2AWQB0EYK7IYYkqBWQpN1AzrpdmcPb2h6jjD6gwcSs7LLKawszTFrFwf0qSjpLA0sOT8NmKmLmd6i6cqB3ZdAJQVXEwO5TqGNksfDcZYMcuYo3ShAeyeFsolYZKcynnWCWBc3bKxBfRiOMLqn7K8FBUVpUNFK/HUAAoliz2BIIHSKCV2WyhYE580oyxmQ7OiWh2zNbuwzAHiSzwUjBFhcxffkGYnKcqSNkJJuoiwSctvDmOsFDHCH6VRyVEcPs0wJQzZiQEgv95LZVMx9rQ5k9cw4xqv7MMFl+MlSciQtzUKGVGyi5sm2vKK6fghUokKQEhAQhBQSEgKQoOyw5BQGIynR3YRhM7NumYO/UozJRlkzEpVdkjNZlEgCwza3g6NMT2Goz+Vf/MxujsjSgZWW3+sw9QCwcgndgw9HPxj1ClgxrdRRmlE7/kyk/Sv/mY7/wAnUrMy/wDmYoY5BduHozRH0RWI/Zfhs9YmTJSyoAB+8ULAkh2N9Y8/+leGvm7uY+n8VUW8cgtKqgvoiB9lmGuDkmuNPxVfOPE77JsLUrOZcx+U1Q+Bi6jkZojzRlEQPsrw1yck24b+Kr4PB47CUX6Vnqsn4xURyM7cfR2lEZM+zHDSoLEtaVDdEwp9ctj5xtVfZ3QzEZFpmFLg/wAQ6i4LxWxyN0r0dSIn/wBLcN/RM/7DHcWscjO3D0dSP//Z"
+              alt="Palak"
+            />
+          </div>
+          <div class="crop-info">
+            <h3 data-en="Spinach" data-mr="Spinach">
+              Spinach <span class="marathi" data-mr="(शाक)">(Spinach)</span>
+            </h3>
+            <div class="crop-details">
+              <p>
+                <strong data-en="Season:" data-mr="ऋतु:">Season:</strong>
+                <span data-en="Nov - Apr" data-mr="नोव्हे - एप्रिल"
+                  >Nov - Apr</span
+                >
+              </p>
+              <p>
+                <strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong>
+                <span
+                  data-en="High in vitamins, minerals, low calorie"
+                  data-mr="व्हिटामिन आणि खनिजांमध्ये उच्च"
+                  >High in vitamins, minerals, low calorie</span
+                >
+              </p>
+              <p>
+                <strong data-en="Method:" data-mr="पद्धती:">Method:</strong>
+                <span
+                  data-en="Drip irrigation, neem-based pest control"
+                  data-mr="ड्रिप सिंचन, नीम आधारित कीटनाशक"
+                  >Drip irrigation, neem-based pest control</span
+                >
+              </p>
             </div>
-
-            <!-- Mirchi -->
-            <div class="crop-card">
-                <div class="crop-image">
-                    <img src="https://placehold.co/300x250?text=Mirchi+Chili" alt="Mirchi">
-                </div>
-                <div class="crop-info">
-                    <h3 data-en="Mirchi" data-mr="मिरची">Mirchi <span class="marathi" data-mr="(मिरचा)">(Chili)</span>
-                    </h3>
-                    <div class="crop-details">
-                        <p><strong data-en="Season:" data-mr="ऋतु:">Season:</strong> <span data-en="May - Jan"
-                                data-mr="मे - जानेवारी">May - Jan</span></p>
-                        <p><strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong> <span
-                                data-en="Boosts metabolism, antibacterial properties"
-                                data-mr="चयापचय वाढवते, जीवाणुनाशक गुणधर्म">Boosts metabolism, antibacterial
-                                properties</span></p>
-                        <p><strong data-en="Method:" data-mr="पद्धती:">Method:</strong> <span
-                                data-en="Organic mulching, soil health management"
-                                data-mr="जैव गलन, मातीचे आरोग्य व्यवस्थापन">Organic mulching, soil health
-                                management</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kothimbir -->
-            <div class="crop-card">
-                <div class="crop-image">
-                    <img src="https://placehold.co/300x250?text=Kothimbir+Coriander" alt="Kothimbir">
-                </div>
-                <div class="crop-info">
-                    <h3 data-en="Kothimbir" data-mr="कोथिंबीर">Kothimbir <span class="marathi"
-                            data-mr="(धनिया)">(Coriander)</span></h3>
-                    <div class="crop-details">
-                        <p><strong data-en="Season:" data-mr="ऋतु:">Season:</strong> <span data-en="Sep - Mar"
-                                data-mr="सप्टे - मार्च">Sep - Mar</span></p>
-                        <p><strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong> <span
-                                data-en="Digestive aid, antioxidant rich"
-                                data-mr="पाचनक्रियाला मदत, अँटीऑक्सिडंट समृद्ध">Digestive aid, antioxidant rich</span>
-                        </p>
-                        <p><strong data-en="Method:" data-mr="पद्धती:">Method:</strong> <span
-                                data-en="Seed treatment, integrated pest management"
-                                data-mr="बीज उपचार, समन्वित कीट व्यवस्थापन">Seed treatment, integrated pest
-                                management</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Maka -->
-            <div class="crop-card">
-                <div class="crop-image">
-                    <img src="https://placehold.co/300x250?text=Maka+Maize" alt="Maka">
-                </div>
-                <div class="crop-info">
-                    <h3 data-en="Maka" data-mr="मका">Maka <span class="marathi" data-mr="(कुकुरूज)">(Maize)</span></h3>
-                    <div class="crop-details">
-                        <p><strong data-en="Season:" data-mr="ऋतु:">Season:</strong> <span data-en="Jun - Sep"
-                                data-mr="जून - सप्टे">Jun - Sep</span></p>
-                        <p><strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong> <span
-                                data-en="High in fiber, essential minerals" data-mr="फायबरमध्ये उच्च, आवश्यक खनिज">High
-                                in fiber, essential minerals</span></p>
-                        <p><strong data-en="Method:" data-mr="पद्धती:">Method:</strong> <span
-                                data-en="Crop rotation, green manuring" data-mr="पीक अदलाबदल, हरित खत">Crop rotation,
-                                green manuring</span></p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Mirchi -->
+        <div class="crop-card">
+          <div class="crop-image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeUrWQiMO8SCs0lGQl0vG-mt__vgAudWhG8g&s"
+              alt="Chili"
+            />
+          </div>
+          <div class="crop-info">
+            <h3 data-en="Mirchi" data-mr="मिरची">
+              Chili <span class="marathi" data-mr="(मिरचा)">(Chili)</span>
+            </h3>
+            <div class="crop-details">
+              <p>
+                <strong data-en="Season:" data-mr="ऋतु:">Season:</strong>
+                <span data-en="May - Jan" data-mr="मे - जानेवारी"
+                  >May - Jan</span
+                >
+              </p>
+              <p>
+                <strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong>
+                <span
+                  data-en="Boosts metabolism, antibacterial properties"
+                  data-mr="चयापचय वाढवते, जीवाणुनाशक गुणधर्म"
+                  >Boosts metabolism, antibacterial properties</span
+                >
+              </p>
+              <p>
+                <strong data-en="Method:" data-mr="पद्धती:">Method:</strong>
+                <span
+                  data-en="Organic mulching, soil health management"
+                  data-mr="जैव गलन, मातीचे आरोग्य व्यवस्थापन"
+                  >Organic mulching, soil health management</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kothimbir -->
+        <div class="crop-card">
+          <div class="crop-image">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Kothimbir"
+            />
+          </div>
+          <div class="crop-info">
+            <h3 data-en="Kothimbir" data-mr="कोथिंबीर">
+              Coriander
+              <span class="marathi" data-mr="(धनिया)">(Coriander)</span>
+            </h3>
+            <div class="crop-details">
+              <p>
+                <strong data-en="Season:" data-mr="ऋतु:">Season:</strong>
+                <span data-en="Sep - Mar" data-mr="सप्टे - मार्च"
+                  >Sep - Mar</span
+                >
+              </p>
+              <p>
+                <strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong>
+                <span
+                  data-en="Digestive aid, antioxidant rich"
+                  data-mr="पाचनक्रियाला मदत, अँटीऑक्सिडंट समृद्ध"
+                  >Digestive aid, antioxidant rich</span
+                >
+              </p>
+              <p>
+                <strong data-en="Method:" data-mr="पद्धती:">Method:</strong>
+                <span
+                  data-en="Seed treatment, integrated pest management"
+                  data-mr="बीज उपचार, समन्वित कीट व्यवस्थापन"
+                  >Seed treatment, integrated pest management</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maka -->
+        <div class="crop-card">
+          <div class="crop-image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6Pj3hViLlMJ4jDbEYuNyOUtx7C2-O4jcgg&s"
+              alt="Maka"
+            />
+          </div>
+          <div class="crop-info">
+            <h3 data-en="Maize" data-mr="Maize">
+              Maka <span class="marathi" data-mr="(कुकुरूज)">(Maize)</span>
+            </h3>
+            <div class="crop-details">
+              <p>
+                <strong data-en="Season:" data-mr="ऋतु:">Season:</strong>
+                <span data-en="Jun - Sep" data-mr="जून - सप्टे">Jun - Sep</span>
+              </p>
+              <p>
+                <strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong>
+                <span
+                  data-en="High in fiber, essential minerals"
+                  data-mr="फायबरमध्ये उच्च, आवश्यक खनिज"
+                  >High in fiber, essential minerals</span
+                >
+              </p>
+              <p>
+                <strong data-en="Method:" data-mr="पद्धती:">Method:</strong>
+                <span
+                  data-en="Crop rotation, green manuring"
+                  data-mr="पीक अदलाबदल, हरित खत"
+                  >Crop rotation, green manuring</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="crop-card">
+          <div class="crop-image">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Maka"
+            />
+          </div>
+          <div class="crop-info">
+            <h3 data-en="Radish" data-mr="मुळा">
+              Radish <span class="marathi" data-mr="(मुळा)">(Maize)</span>
+            </h3>
+            <div class="crop-details">
+              <p>
+                <strong data-en="Season:" data-mr="ऋतु:">Season:</strong>
+                <span data-en="Jun - Sep" data-mr="जून - सप्टे"
+                  >October – February</span
+                >
+              </p>
+              <p>
+                <strong data-en="Benefits:" data-mr="फायदे:">Benefits:</strong>
+                <span
+                  data-en="High in fiber, essential minerals"
+                  data-mr="फायबरमध्ये उच्च, आवश्यक खनिज"
+                  >Rich in fiber and Vitamin C</span
+                >
+              </p>
+              <p>
+                <strong data-en="Method:" data-mr="पद्धती:">Method:</strong>
+                <span
+                  data-en="Crop rotation, green manuring"
+                  data-mr="पीक अदलाबदल, हरित खत"
+                  >Crop rotation and organic manure.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Farming Inputs Section -->
     <section id="inputs" class="inputs-section">
-        <div class="section-header">
-            <h2 data-en="Plant & Farming Inputs" data-mr="रोपे आणि शेतकरी इनपुट्स">Plant & Farming Inputs</h2>
-            <p data-en="Premium quality organic inputs for healthy crop growth"
-                data-mr="आरोग्यपूर्ण पीक वृद्धीसाठी प्रीमियम गुणवत्तेची जैव इनपुट्स">Premium quality organic inputs for
-                healthy crop growth</p>
+      <div class="section-header">
+        <h2 data-en="Plant & Farming Inputs" data-mr="रोपे आणि शेतकरी इनपुट्स">
+          Plant & Farming Inputs
+        </h2>
+        <p
+          data-en="Premium quality organic inputs for healthy crop growth"
+          data-mr="आरोग्यपूर्ण पीक वृद्धीसाठी प्रीमियम गुणवत्तेची जैव इनपुट्स"
+        >
+          Premium quality organic inputs for healthy crop growth
+        </p>
+      </div>
+      <div class="inputs-grid">
+        <div class="input-card">
+          <i class="fas fa-leaf"></i>
+          <h3 data-en="Papaya Plant" data-mr="पपई रोप">Papaya Plant</h3>
+          <p
+            data-en="Disease-resistant, high-yield varieties"
+            data-mr="रोग-प्रतिरोधक, उच्च उपजाची किस्में"
+          >
+            Disease-resistant, high-yield varieties
+          </p>
         </div>
-        <div class="inputs-grid">
-            <div class="input-card">
-                <i class="fas fa-leaf"></i>
-                <h3 data-en="Papaya Plant" data-mr="पपई रोप">Papaya Plant</h3>
-                <p data-en="Disease-resistant, high-yield varieties" data-mr="रोग-प्रतिरोधक, उच्च उपजाची किस्में">
-                    Disease-resistant, high-yield varieties</p>
-            </div>
-            <div class="input-card">
-                <i class="fas fa-droplet"></i>
-                <h3 data-en="Kadul Khat" data-mr="कडूळ खत">Kadul Khat</h3>
-                <p data-en="Organic manure - Rich in nutrients" data-mr="जैव खत - पोषकांनी समृद्ध">Organic manure - Rich
-                    in nutrients</p>
-            </div>
-            <div class="input-card">
-                <i class="fas fa-flask"></i>
-                <h3 data-en="Jivamrut" data-mr="जिवामृत">Jivamrut</h3>
-                <p data-en="Bio-fertilizer for soil enrichment" data-mr="मातीच्या समृद्धीसाठी जैव खत">Bio-fertilizer for
-                    soil enrichment</p>
-            </div>
-            <div class="input-card">
-                <i class="fas fa-tree"></i>
-                <h3 data-en="Neem Ark" data-mr="नीम अर्क">Neem Ark</h3>
-                <p data-en="Natural pesticide for crop protection" data-mr="पीक संरक्षणासाठी नैसर्गिक कीटनाशक">Natural
-                    pesticide for crop protection</p>
-            </div>
+        <div class="input-card">
+          <i class="fas fa-droplet"></i>
+          <h3 data-en="Kadul Khat" data-mr="कडूळ खत">Kadul Khat</h3>
+          <p
+            data-en="Organic manure - Rich in nutrients"
+            data-mr="जैव खत - पोषकांनी समृद्ध"
+          >
+            Organic manure - Rich in nutrients
+          </p>
         </div>
+        <div class="input-card">
+          <i class="fas fa-flask"></i>
+          <h3 data-en="Jivamrut" data-mr="जिवामृत">Jivamrut</h3>
+          <p
+            data-en="Bio-fertilizer for soil enrichment"
+            data-mr="मातीच्या समृद्धीसाठी जैव खत"
+          >
+            Bio-fertilizer for soil enrichment
+          </p>
+        </div>
+        <div class="input-card">
+          <i class="fas fa-tree"></i>
+          <h3 data-en="Neem Ark" data-mr="नीम अर्क">Neem Ark</h3>
+          <p
+            data-en="Natural pesticide for crop protection"
+            data-mr="पीक संरक्षणासाठी नैसर्गिक कीटनाशक"
+          >
+            Natural pesticide for crop protection
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services-section">
-        <div class="section-header">
-            <h2 data-en="Farming Services" data-mr="शेतकरी सेवा">Farming Services</h2>
-            <p data-en="Expert guidance and services for better farming outcomes"
-                data-mr="बेहतर शेती परिणामांसाठी तज्ञ मार्गदर्शन आणि सेवा">Expert guidance and services for better
-                farming outcomes</p>
+      <div class="section-header">
+        <h2 data-en="Farming Services" data-mr="शेतकरी सेवा">
+          Farming Services
+        </h2>
+        <p
+          data-en="Expert guidance and services for better farming outcomes"
+          data-mr="बेहतर शेती परिणामांसाठी तज्ञ मार्गदर्शन आणि सेवा"
+        >
+          Expert guidance and services for better farming outcomes
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-flask-vial"></i>
+          </div>
+          <h3 data-en="Soil Testing" data-mr="मातीची चाचणी">Soil Testing</h3>
+          <p
+            data-en="Comprehensive soil analysis for nutrient management and crop selection"
+            data-mr="पोषक व्यवस्थापन आणि पीक निवडीसाठी व्यापक मातीविश्लेषण"
+          >
+            Comprehensive soil analysis for nutrient management and crop
+            selection
+          </p>
         </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-flask-vial"></i>
-                </div>
-                <h3 data-en="Soil Testing" data-mr="मातीची चाचणी">Soil Testing</h3>
-                <p data-en="Comprehensive soil analysis for nutrient management and crop selection"
-                    data-mr="पोषक व्यवस्थापन आणि पीक निवडीसाठी व्यापक मातीविश्लेषण">Comprehensive soil analysis for
-                    nutrient management and crop selection</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-water"></i>
-                </div>
-                <h3 data-en="Water Testing" data-mr="पाण्याची चाचणी">Water Testing</h3>
-                <p data-en="Assess water quality for irrigation and identify contamination issues"
-                    data-mr="सिंचनासाठी पाण्याची गुणवत्ता तपासा आणि प्रदूषण समस्या ओळखा">Assess water quality for
-                    irrigation and identify contamination issues</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-water"></i>
-                </div>
-                <h3 data-en="Drip Irrigation Setup" data-mr="ड्रिप सिंचन सेटअप">Drip Irrigation Setup</h3>
-                <p data-en="Installation and maintenance of efficient drip irrigation systems"
-                    data-mr="कुशल ड्रिप सिंचन प्रणालीची स्थापना आणि देखभाल">Installation and maintenance of efficient
-                    drip irrigation systems</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-bug"></i>
-                </div>
-                <h3 data-en="Organic Pest Control" data-mr="जैव कीट नियंत्रण">Organic Pest Control</h3>
-                <p data-en="Sustainable solutions for pest and disease management"
-                    data-mr="कीट आणि रोग व्यवस्थापनासाठी टिकाऊ समाधान">Sustainable solutions for pest and disease
-                    management</p>
-            </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3 data-en="Water Testing" data-mr="पाण्याची चाचणी">
+            Water Testing
+          </h3>
+          <p
+            data-en="Assess water quality for irrigation and identify contamination issues"
+            data-mr="सिंचनासाठी पाण्याची गुणवत्ता तपासा आणि प्रदूषण समस्या ओळखा"
+          >
+            Assess water quality for irrigation and identify contamination
+            issues
+          </p>
         </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3 data-en="Drip Irrigation Setup" data-mr="ड्रिप सिंचन सेटअप">
+            Drip Irrigation Setup
+          </h3>
+          <p
+            data-en="Installation and maintenance of efficient drip irrigation systems"
+            data-mr="कुशल ड्रिप सिंचन प्रणालीची स्थापना आणि देखभाल"
+          >
+            Installation and maintenance of efficient drip irrigation systems
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bug"></i>
+          </div>
+          <h3 data-en="Organic Pest Control" data-mr="जैव कीट नियंत्रण">
+            Organic Pest Control
+          </h3>
+          <p
+            data-en="Sustainable solutions for pest and disease management"
+            data-mr="कीट आणि रोग व्यवस्थापनासाठी टिकाऊ समाधान"
+          >
+            Sustainable solutions for pest and disease management
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Organic Methods & Practices -->
     <section id="practices" class="practices-section">
-        <div class="section-header">
-            <h2 data-en="Organic Methods & Practices" data-mr="जैव पद्धती आणि अभ्यास">Organic Methods & Practices</h2>
-            <p data-en="Traditional and modern sustainable farming techniques"
-                data-mr="पारंपरिक आणि आधुनिक टिकाऊ शेती तंत्र">Traditional and modern sustainable farming techniques</p>
+      <div class="section-header">
+        <h2
+          data-en="Organic Methods & Practices"
+          data-mr="जैव पद्धती आणि अभ्यास"
+        >
+          Organic Methods & Practices
+        </h2>
+        <p
+          data-en="Traditional and modern sustainable farming techniques"
+          data-mr="पारंपरिक आणि आधुनिक टिकाऊ शेती तंत्र"
+        >
+          Traditional and modern sustainable farming techniques
+        </p>
+      </div>
+      <div class="practices-grid">
+        <div class="practice-card">
+          <div class="practice-icon">
+            <i class="fas fa-cut"></i>
+          </div>
+          <h3 data-en="Kalam (Grafting)" data-mr="कलम (कलमबंदी)">
+            Kalam (Grafting)
+          </h3>
+          <p
+            data-en="Combine desired plant traits for better yield and disease resistance"
+            data-mr="बेहतर उपज आणि रोग प्रतिरोधासाठी वांछित वनस्पती गुणधर्म एकत्रित करा"
+          >
+            Combine desired plant traits for better yield and disease resistance
+          </p>
         </div>
-        <div class="practices-grid">
-            <div class="practice-card">
-                <div class="practice-icon">
-                    <i class="fas fa-cut"></i>
-                </div>
-                <h3 data-en="Kalam (Grafting)" data-mr="कलम (कलमबंदी)">Kalam (Grafting)</h3>
-                <p data-en="Combine desired plant traits for better yield and disease resistance"
-                    data-mr="बेहतर उपज आणि रोग प्रतिरोधासाठी वांछित वनस्पती गुणधर्म एकत्रित करा">Combine desired plant
-                    traits for better yield and disease resistance</p>
-            </div>
-            <div class="practice-card">
-                <div class="practice-icon">
-                    <i class="fas fa-umbrella"></i>
-                </div>
-                <h3 data-en="Pantya Dhup (Shade Management)" data-mr="पांथ्य धूप">Pantya Dhup</h3>
-                <p data-en="Strategic shading techniques to protect crops from extreme weather"
-                    data-mr="अत्यंत हवामानातून पीके संरक्षण करण्यासाठी कौशल्यपूर्ण छाया तंत्र">Strategic shading
-                    techniques to protect crops from extreme weather</p>
-            </div>
-            <div class="practice-card">
-                <div class="practice-icon">
-                    <i class="fas fa-water"></i>
-                </div>
-                <h3 data-en="Ghavri (Water Management)" data-mr="घवरी">Ghavri</h3>
-                <p data-en="Traditional water conservation and soil moisture management"
-                    data-mr="पारंपरिक जल संरक्षण आणि मातीचे आर्द्रता व्यवस्थापन">Traditional water conservation and soil
-                    moisture management</p>
-            </div>
-            <div class="practice-card">
-                <div class="practice-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <h3 data-en="Natural Composting" data-mr="नैसर्गिक खाद">Natural Composting</h3>
-                <p data-en="Convert farm waste into nutrient-rich soil amendments"
-                    data-mr="शेत कचरे को पोषक-समृद्ध मातीमध्ये परिवर्तित करा">Convert farm waste into nutrient-rich soil
-                    amendments</p>
-            </div>
+        <div class="practice-card">
+          <div class="practice-icon">
+            <i class="fas fa-umbrella"></i>
+          </div>
+          <h3 data-en="Pantya Dhup (Shade Management)" data-mr="पांथ्य धूप">
+            Pantya Dhup
+          </h3>
+          <p
+            data-en="Strategic shading techniques to protect crops from extreme weather"
+            data-mr="अत्यंत हवामानातून पीके संरक्षण करण्यासाठी कौशल्यपूर्ण छाया तंत्र"
+          >
+            Strategic shading techniques to protect crops from extreme weather
+          </p>
         </div>
+        <div class="practice-card">
+          <div class="practice-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3 data-en="Ghavri (Water Management)" data-mr="घवरी">Ghavri</h3>
+          <p
+            data-en="Traditional water conservation and soil moisture management"
+            data-mr="पारंपरिक जल संरक्षण आणि मातीचे आर्द्रता व्यवस्थापन"
+          >
+            Traditional water conservation and soil moisture management
+          </p>
+        </div>
+        <div class="practice-card">
+          <div class="practice-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 data-en="Natural Composting" data-mr="नैसर्गिक खाद">
+            Natural Composting
+          </h3>
+          <p
+            data-en="Convert farm waste into nutrient-rich soil amendments"
+            data-mr="शेत कचरे को पोषक-समृद्ध मातीमध्ये परिवर्तित करा"
+          >
+            Convert farm waste into nutrient-rich soil amendments
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Certifications & Work Done -->
     <section id="certifications" class="certifications-section">
-        <div class="section-header">
-            <h2 data-en="Certifications & Work Done" data-mr="प्रमाणपत्र आणि केलेले काम">Certifications & Work Done</h2>
-            <p data-en="Our credentials and completed organic farming projects"
-                data-mr="आमचे प्रमाणपत्र आणि पूर्ण जैव शेती प्रकल्प">Our credentials and completed organic farming
-                projects</p>
+      <div class="section-header">
+        <h2
+          data-en="Certifications & Work Done"
+          data-mr="प्रमाणपत्र आणि केलेले काम"
+        >
+          Certifications & Work Done
+        </h2>
+        <p
+          data-en="Our credentials and completed organic farming projects"
+          data-mr="आमचे प्रमाणपत्र आणि पूर्ण जैव शेती प्रकल्प"
+        >
+          Our credentials and completed organic farming projects
+        </p>
+      </div>
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <i class="fas fa-certificate"></i>
+          <h3 data-en="Organic Certification" data-mr="जैव प्रमाणीकरण">
+            Organic Certification
+          </h3>
+          <p
+            data-en="Government recognized organic farming certification"
+            data-mr="सरकार द्वारे मान्यता प्राप्त जैव कृषि प्रमाणन"
+          >
+            Government recognized organic farming certification
+          </p>
         </div>
-        <div class="certifications-grid">
-            <div class="cert-card">
-                <i class="fas fa-certificate"></i>
-                <h3 data-en="Organic Certification" data-mr="जैव प्रमाणीकरण">Organic Certification</h3>
-                <p data-en="Government recognized organic farming certification"
-                    data-mr="सरकार द्वारे मान्यता प्राप्त जैव कृषि प्रमाणन">Government recognized organic farming
-                    certification</p>
-            </div>
-            <div class="cert-card">
-                <i class="fas fa-handshake"></i>
-                <h3 data-en="50+ Farms Transformed" data-mr="50+ शेत रूपांतरित">50+ Farms Transformed</h3>
-                <p data-en="Successfully converted conventional farms to organic"
-                    data-mr="पारंपरिक शेतीला जैव शेतीमध्ये यशस्वीरित्या रूपांतरित">Successfully converted conventional
-                    farms to organic</p>
-            </div>
-            <div class="cert-card">
-                <i class="fas fa-star"></i>
-                <h3 data-en="100+ Happy Farmers" data-mr="100+ संतुष्ट शेतकरी">100+ Happy Farmers</h3>
-                <p data-en="Trusted by farmers across the region" data-mr="संपूर्ण क्षेत्रातील शेतकर्यांना विश्वास आहे">
-                    Trusted by farmers across the region</p>
-            </div>
+        <div class="cert-card">
+          <i class="fas fa-handshake"></i>
+          <h3 data-en="50+ Farms Transformed" data-mr="50+ शेत रूपांतरित">
+            50+ Farms Transformed
+          </h3>
+          <p
+            data-en="Successfully converted conventional farms to organic"
+            data-mr="पारंपरिक शेतीला जैव शेतीमध्ये यशस्वीरित्या रूपांतरित"
+          >
+            Successfully converted conventional farms to organic
+          </p>
         </div>
+        <div class="cert-card">
+          <i class="fas fa-star"></i>
+          <h3 data-en="100+ Happy Farmers" data-mr="100+ संतुष्ट शेतकरी">
+            100+ Happy Farmers
+          </h3>
+          <p
+            data-en="Trusted by farmers across the region"
+            data-mr="संपूर्ण क्षेत्रातील शेतकर्यांना विश्वास आहे"
+          >
+            Trusted by farmers across the region
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
-        <div class="section-header">
-            <h2 data-en="Gallery" data-mr="गॅलरी">Gallery</h2>
-            <p data-en="Visual showcase of our farming practices and crops"
-                data-mr="आमची शेती पद्धती आणि पीकांचे दृश्य प्रदर्शन">Visual showcase of our farming practices and crops
+      <div class="section-header">
+        <h2 data-en="Gallery" data-mr="गॅलरी">Gallery</h2>
+        <p
+          data-en="Visual showcase of our farming practices and crops"
+          data-mr="आमची शेती पद्धती आणि पीकांचे दृश्य प्रदर्शन"
+        >
+          Visual showcase of our farming practices and crops
+        </p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="https://placehold.co/300x300?text=Farm+Field"
+            alt="Farm Field"
+          />
+          <div class="gallery-overlay">
+            <p data-en="Organic Farm Field" data-mr="जैव शेत क्षेत्र">
+              Organic Farm Field
             </p>
+          </div>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://placehold.co/300x300?text=Farm+Field" alt="Farm Field">
-                <div class="gallery-overlay">
-                    <p data-en="Organic Farm Field" data-mr="जैव शेत क्षेत्र">Organic Farm Field</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://placehold.co/300x300?text=Crop+Growth" alt="Crop Growth">
-                <div class="gallery-overlay">
-                    <p data-en="Crop Growth Stages" data-mr="पीक वृद्धी अवस्था">Crop Growth Stages</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://placehold.co/300x300?text=Irrigation" alt="Irrigation">
-                <div class="gallery-overlay">
-                    <p data-en="Drip Irrigation System" data-mr="ड्रिप सिंचन प्रणाली">Drip Irrigation System</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://placehold.co/300x300?text=Harvest" alt="Harvest">
-                <div class="gallery-overlay">
-                    <p data-en="Fresh Harvest" data-mr="ताजी कापणी">Fresh Harvest</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://placehold.co/300x300?text=Team" alt="Team">
-                <div class="gallery-overlay">
-                    <p data-en="Our Team" data-mr="आमची टीम">Our Team</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://placehold.co/300x300?text=Training" alt="Training">
-                <div class="gallery-overlay">
-                    <p data-en="Farmer Training" data-mr="शेतकरी प्रशिक्षण">Farmer Training</p>
-                </div>
-            </div>
+        <div class="gallery-item">
+          <img
+            src="https://placehold.co/300x300?text=Crop+Growth"
+            alt="Crop Growth"
+          />
+          <div class="gallery-overlay">
+            <p data-en="Crop Growth Stages" data-mr="पीक वृद्धी अवस्था">
+              Crop Growth Stages
+            </p>
+          </div>
         </div>
+        <div class="gallery-item">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Irrigation"
+          />
+          <div class="gallery-overlay">
+            <p data-en="Drip Irrigation System" data-mr="ड्रिप सिंचन प्रणाली">
+              Drip Irrigation System
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://placehold.co/300x300?text=Harvest" alt="Harvest" />
+          <div class="gallery-overlay">
+            <p data-en="Fresh Harvest" data-mr="ताजी कापणी">Fresh Harvest</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://placehold.co/300x300?text=Team" alt="Team" />
+          <div class="gallery-overlay">
+            <p data-en="Our Team" data-mr="आमची टीम">Our Team</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://sumatibalwan.org/images/certification/Certificate.png"
+            alt="Training"
+          />
+          <div class="gallery-overlay">
+            <p data-en="Farmer Training" data-mr="शेतकरी प्रशिक्षण">
+              Farmer Training
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3><i class="fas fa-leaf"></i> <span data-en="Green Farming" data-mr="हरित शेती">Green Farming</span>
-                </h3>
-                <p data-en="Promoting organic and sustainable agriculture for a healthier India"
-                    data-mr="एक स्वास्थ्यकर भारतासाठी जैव आणि टिकाऊ कृषि प्रचार">Promoting organic and sustainable
-                    agriculture for a healthier India</p>
-            </div>
-            <div class="footer-section">
-                <h4 data-en="Quick Links" data-mr="द्रुत लिंक">Quick Links</h4>
-                <ul>
-                    <li><a href="#crops" data-en="Crops" data-mr="पिके">Crops</a></li>
-                    <li><a href="#services" data-en="Services" data-mr="सेवा">Services</a></li>
-                    <li><a href="#practices" data-en="Practices" data-mr="पद्धती">Practices</a></li>
-                    <li><a href="contact.html" data-en="Contact" data-mr="संपर्क">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4 data-en="Follow Us" data-mr="आमचे अनुसरण करा">Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>
+            <i class="fas fa-leaf"></i>
+            <span data-en="Green Farming" data-mr="हरित शेती"
+              >Green Farming</span
+            >
+          </h3>
+          <p
+            data-en="Promoting organic and sustainable agriculture for a healthier India"
+            data-mr="एक स्वास्थ्यकर भारतासाठी जैव आणि टिकाऊ कृषि प्रचार"
+          >
+            Promoting organic and sustainable agriculture for a healthier India
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p data-en="&copy; 2024 Green Farming. All rights reserved."
-                data-mr="&copy; 2024 हरित शेती। सर्व अधिकार सुरक्षित।">&copy; 2024 Green Farming. All rights reserved.
-            </p>
+        <div class="footer-section">
+          <h4 data-en="Quick Links" data-mr="द्रुत लिंक">Quick Links</h4>
+          <ul>
+            <li><a href="#crops" data-en="Crops" data-mr="पिके">Crops</a></li>
+            <li>
+              <a href="#services" data-en="Services" data-mr="सेवा">Services</a>
+            </li>
+            <li>
+              <a href="#practices" data-en="Practices" data-mr="पद्धती"
+                >Practices</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" data-en="Contact" data-mr="संपर्क"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
+        <div class="footer-section">
+          <h4 data-en="Follow Us" data-mr="आमचे अनुसरण करा">Follow Us</h4>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p
+          data-en="&copy; 2024 Green Farming. All rights reserved."
+          data-mr="&copy; 2024 हरित शेती। सर्व अधिकार सुरक्षित।"
+        >
+          &copy; 2024 Green Farming. All rights reserved.
+        </p>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top" type="button" title="Back to Top">
-        <i class="fas fa-arrow-up"></i>
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      type="button"
+      title="Back to Top"
+    >
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="lib/js/script.js"></script>
-</body>
-
+  </body>
 </html>

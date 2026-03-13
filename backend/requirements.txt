@@ -1,4 +1,4 @@
-flask
-flask_cors
-
+Django
+djangorestframework
+django-cors-headers
 sqlalchemy
