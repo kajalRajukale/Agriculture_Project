@@ -1,3 +1,5 @@
+# .\.venv\Scripts\Activate.ps1
+
 # How to start the Backend Django
 
 ## First, open the correct project folder with VSCode
